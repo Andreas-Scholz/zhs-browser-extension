@@ -2,6 +2,8 @@
 
 A browser extension for [kurse.zhs-muenchen.de](https://kurse.zhs-muenchen.de) that replaces the site's one-day-at-a-time view with a full 7-day grid of all sports courts and time slots. Book directly from the grid with a single click.
 
+![ZHS Booking Helper overview](images/chrome_promo_small.png)
+
 ## Features
 
 - 7-day availability overview for all ZHS sports (beach volleyball, tennis, and more)
