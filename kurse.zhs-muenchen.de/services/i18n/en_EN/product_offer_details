@@ -1,0 +1,135 @@
+{
+  "common": {
+    "time": {
+      "time_suffix": ""
+    },
+    "weekdays": {
+      "long": {
+        "1": "Monday",
+        "2": "Tuesday",
+        "3": "Wednesday",
+        "4": "Thursday",
+        "5": "Friday",
+        "6": "Saturday",
+        "0": "Sunday"
+      },
+      "short": {
+        "1": "Mon",
+        "2": "Tue",
+        "3": "Wed",
+        "4": "Thu",
+        "5": "Fri",
+        "6": "Sat",
+        "0": "Sun"
+      }
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "save": "Save",
+      "confirm": "Confirm",
+      "contact": "Contact",
+      "continue": "Continue",
+      "add_to_cart": "Add to Cart",
+      "checkout": "Go To Checkout",
+      "more_bookings": "Make more bookings",
+      "login": "Login",
+      "reload": "Try again",
+      "understood": "Understood"
+    },
+    "states": {
+      "loading": "Loading...",
+      "empty": "No Entries"
+    },
+    "infos": {
+      "unknown": "Unknown",
+      "of": " of ",
+      "result": "1 Result",
+      "results": "{{count}} Results",
+      "leave_to_another_page": {
+        "headline": "Note on forwarding!",
+        "description_before": "For data protection reasons, we would like to point out that you will be redirected to the external ",
+        "description_after": " page. Would you like to continue?"
+      }
+    },
+    "errors": {
+      "general_error": "An Error occurred.",
+      "loading_error": "Could not load data.",
+      "not_found": "No entries found.",
+      "empty_field": "Field must not be empty",
+      "error_view": {
+        "headline": "Oops, something went wrong!",
+        "description": "Don't panic, our technical team is already working on fixing the problem. Just try again later."
+      }
+    },
+    "languages": {
+      "de_DE": "German",
+      "en_EN": "English"
+    },
+    "roles": {
+      "system": {
+        "superadmin": "Superadmin",
+        "user": "Guests"
+      }
+    },
+    "toast": {
+      "bad_request": "Something went wrong.",
+      "forbidden": "Not allowed.",
+      "booking_in_progress": "Complete your current booking before adding new items.",
+      "cart": {
+        "add": {
+          "success": "Product successfully added to cart.",
+          "authorization_error": "You have not fulfilled the prerequisites.",
+          "error": "Could not add product to cart.",
+          "error_dependency_unavailable": "Course could not be added because the required prerequisite \"{{dependencyName}}\" is sold out."
+        }
+      }
+    }
+  },
+  "product_offer_details": {
+    "prerequisites": "Booking conditions",
+    "target_roles": "Price for {{ role }}: {{ price }} / time slot",
+    "empty_products": "No products have been published in this offer yet. Please check back later.",
+    "empty_slots": "Currently no bookable slots available.",
+    "login": {
+      "headline": "Log in!",
+      "description": "To book this product, you need to log in."
+    },
+    "slot_status": {
+      "not_yet_bookable": "Bookable from {{ date }}",
+      "expired": "Booking Period expired",
+      "no_permission": "No Permission, only for {{ roles }}",
+      "already_in_cart": "Already in Cart",
+      "already_booked": "Already Booked",
+      "join_waiting_list": "Join Waiting List",
+      "leave_waiting_list": "Leave Waiting List",
+      "booked_out": "Booked Out",
+      "available": "Available"
+    },
+    "modal": {
+      "add_to_cart": {
+        "headline": "My Selection",
+        "subheadline": "You have made the following selection:"
+      },
+      "reservation": {
+        "timer.prefix": "Reservation",
+        "timer.suffix": "min.",
+        "reservation": {
+          "headline": "Reservation",
+          "subheadline": "Reservation shortly explained",
+          "description": "<li>Your products will be reserved for the next few minutes.</li><li>During this time, you can add further products to your shopping basket and complete your booking.</li><li>After the reservation period has expired, the products will be released again for all interested parties.</li>"
+        },
+        "fee": {
+          "headline": "Fee & Reservation",
+          "subheadline": "Fee shortly explained",
+          "description": "<li>The basic fee is charged once and is a prerequisite for your booking.</li><li>Covers insurance and basic costs.</li><li>Some bookings charge an additional fee.</li>"
+        }
+      },
+      "prerequisite": {
+        "headline": "Booking Conditions",
+        "subheadline": "Conditions for your booking:"
+      }
+    }
+  }
+}

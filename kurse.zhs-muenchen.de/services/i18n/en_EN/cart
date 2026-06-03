@@ -1,0 +1,131 @@
+{
+  "common": {
+    "time": {
+      "hour": "Hour",
+      "hours": "Hours",
+      "minute": "Minute",
+      "minutes": "Minutes"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "save": "Save",
+      "confirm": "Confirm",
+      "contact": "Contact",
+      "continue": "Continue",
+      "remove": "Remove"
+    },
+    "states": {
+      "loading": "Loading...",
+      "updating": "Updating...",
+      "empty": "No Entries",
+      "error": "An error occurred, please try again later."
+    },
+    "infos": {
+      "unknown": "Unknown",
+      "of": " of ",
+      "result": "1 Result",
+      "results": "{{count}} Results",
+      "leave_to_another_page": {
+        "headline": "Note on forwarding!",
+        "description_before": "For data protection reasons, we would like to point out that you will be redirected to the external ",
+        "description_after": " page. Would you like to continue?"
+      }
+    },
+    "errors": {
+      "general_error": "An Error occurred.",
+      "loading_error": "Could not load data.",
+      "not_found": "No entries found.",
+      "empty_field": "Field must not be empty",
+      "error_view": {
+        "headline": "Oops, something went wrong!",
+        "description": "Don't panic, our technical team is already working on fixing the problem. Just try again later.",
+        "button": "Try again"
+      }
+    },
+    "languages": {
+      "de_DE": "German",
+      "en_EN": "English"
+    },
+    "roles": {
+      "system": {
+        "superadmin": "Superadmin",
+        "user": "Guest"
+      }
+    },
+    "toast": {
+      "bad_request": "Something went wrong.",
+      "forbidden": "Not allowed.",
+      "cart": {
+        "add": {
+          "success": "Successfully added course to cart.",
+          "error": "Could not add course to cart."
+        },
+        "delete_checkout": {
+          "success": "Successfully canceled booking.",
+          "error": "Could not cancel booking.",
+          "error_payment_not_changeable": "Payment already in a non cancelable state"
+        },
+        "delete": {
+          "success": "Successfully deleted course from cart.",
+          "error": "Could not delete course from cart."
+        },
+        "create": {
+          "success": "Successfully redirected to checkout.",
+          "error": "Could not go to checkout."
+        },
+        "update": {
+          "success": "Successfully updated.",
+          "error": "Could not update cart."
+        },
+        "remove_product": {
+          "success": "Successfully removed product from cart.",
+          "error": "Could not remove product from cart."
+        },
+        "coupon": {
+          "apply_success": "Coupon applied successfully.",
+          "apply_error": "Could not apply coupon.",
+          "remove_success": "Coupon removed successfully.",
+          "remove_error": "Could not remove coupon."
+        }
+      }
+    }
+  },
+  "cart": {
+    "cart": "Cart",
+    "summary": "Summary",
+    "remaining_time": "Time remaining:",
+    "min": "min.",
+    "note": "Note",
+    "total": "Total",
+    "go_to_checkout": "Go to checkout",
+    "continue_booking": "Continue booking",
+    "note_text_1": "You already have a booking in progress. Do you want to continue or cancel the booking?",
+    "note_text_2": "Attention: If you cancel, your reserved seats will be forfeited.",
+    "add_more": "Add more courses",
+    "cancel_booking": "Cancel booking",
+    "no_courses": "No courses in the cart",
+    "add": "Add courses",
+    "coupon": {
+      "placeholder": "Enter coupon code",
+      "apply": "Apply",
+      "remove": "Remove",
+      "applied": "Coupon applied",
+      "discount": "Coupon discount",
+      "error_apply": "Invalid or expired coupon code.",
+      "error_remove": "Could not remove coupon."
+    },
+    "course_fee": "The basic fee is paid once in the course period. After the one-time payment for the current course period, all courses can be booked free of charge. Special courses are marked as such, require an extra fee and can only be taken if the base fee has already been purchased."
+  },
+  "recurring": {
+    "month_singular": "month",
+    "month_plural": "months",
+    "monthly_payment": "{{price}}/month for {{duration}} {{monthText}}",
+    "monthly_prefix": "mo.",
+    "one_time_with_duration": "{{price}} - {{duration}} {{monthText}}",
+    "duration_only": "Duration {{duration}} {{monthText}}",
+    "subscription_minimum_duration": "Subscription • {{duration}} {{monthText}} + monthly renewal",
+    "payment_info": "Note: Payment is always collected starting from the start month"
+  }
+}

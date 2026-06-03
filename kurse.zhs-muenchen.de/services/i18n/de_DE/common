@@ -1,0 +1,92 @@
+{
+  "yes": "ja",
+  "no": "nein",
+  "languages": {
+    "de_DE": "Deutsch",
+    "en_EN": "Englisch"
+  },
+  "roles": {
+    "system": {
+      "superadmin": "Superadmin",
+      "user": "Gast"
+    }
+  },
+  "weekdays": {
+    "long": {
+      "1": "Montag",
+      "2": "Dienstag",
+      "3": "Mittwoch",
+      "4": "Donnerstag",
+      "5": "Freitag",
+      "6": "Samstag",
+      "0": "Sonntag"
+    },
+    "short": {
+      "1": "Mo",
+      "2": "Di",
+      "3": "Mi",
+      "4": "Do",
+      "5": "Fr",
+      "6": "Sa",
+      "0": "So"
+    }
+  },
+  "time": {
+    "clock": "Uhr",
+    "min_short": "Min."
+  },
+  "actions": {
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "confirm": "Bestätigen",
+    "contact": "Kontaktieren",
+    "continue": "Fortfahren",
+    "remove": "Entfernen",
+    "next": "Weiter",
+    "back": "Zurück",
+    "add": "Hinzufügen"
+  },
+  "states": {
+    "loading": "Lädt...",
+    "empty": "Keine Einträge"
+  },
+  "errors": {
+    "general_error": "Es ist ein Fehler aufgetreten.",
+    "forbidden": "Zugriff verweigert.",
+    "loading_error": "Daten konnten nicht geladen werden.",
+    "not_found": "Keine Einträge gefunden.",
+    "empty_field": "Feld darf nicht leer sein",
+    "error_view": {
+      "headline": "Ups, da ging etwas schief!",
+      "description": " Keine Panik, unser technisches Team arbeitet bereits an der Behebung des Problems. Versuche es einfach später noch einmal.",
+      "button": "Erneut versuchen"
+    }
+  },
+  "infos": {
+    "unknown": "Unbekannt",
+    "of": " von ",
+    "result": "1 Ergebnis",
+    "results": "{{count}} Ergebnisse",
+    "leave_to_another_page": {
+      "headline": "Hinweis zur Weiterleitung!",
+      "description_before": "Aus Datenschutzgründen möchten wir dich darauf hinweisen, dass du auf die externe Seite ",
+      "description_after": " weitergeleitet wirst. Möchtest du fortfahren?"
+    }
+  },
+  "file_picker": {
+    "actions": {
+      "select_file": "Datei auswählen",
+      "is_loading": "Lädt...",
+      "try_again": "Erneut versuchen"
+    },
+    "errors": {
+      "file_too_large": "Datei ist zu groß.",
+      "file_type_not_allowed": "Dateityp ist nicht erlaubt.",
+      "could_not_transform_file": "Fehler beim Hochladen der Datei."
+    }
+  },
+  "characters": "Zeichen",
+  "character_limit_reached": "Zeichenlimit erreicht"
+}

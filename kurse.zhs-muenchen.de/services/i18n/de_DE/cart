@@ -1,0 +1,132 @@
+{
+  "common": {
+    "time": {
+      "hour": "Stunde",
+      "hours": "Stunden",
+      "minute": "Minute",
+      "minutes": "Minuten"
+    },
+    "actions": {
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "confirm": "Bestätigen",
+      "contact": "Kontaktieren",
+      "continue": "Fortfahren",
+      "remove": "Entfernen"
+    },
+    "states": {
+      "loading": "Lädt...",
+      "updating": "Aktualisiere...",
+      "empty": "Keine Einträge",
+      "error": "Ein Fehler ist aufgetreten, bitte versuche es später erneut."
+    },
+    "infos": {
+      "not_available": "Nicht verfügbar",
+      "unknown": "Unbekannt",
+      "of": " von ",
+      "result": "1 Ergebnis",
+      "results": "{{count}} Ergebnisse",
+      "leave_to_another_page": {
+        "headline": "Hinweis zur Weiterleitung!",
+        "description_before": "Aus Datenschutzgründen möchten wir dich darauf hinweisen, dass du auf die externe Seite ",
+        "description_after": " weitergeleitet wirst. Möchtest du fortfahren?"
+      }
+    },
+    "errors": {
+      "general_error": "Es ist ein Fehler aufgetreten.",
+      "loading_error": "Daten konnten nicht geladen werden.",
+      "not_found": "Keine Einträge gefunden.",
+      "empty_field": "Feld darf nicht leer sein",
+      "error_view": {
+        "headline": "Ups, da ging etwas schief!",
+        "description": " Keine Panik, unser technisches Team arbeitet bereits an der Behebung des Problems. Versuche es einfach später noch einmal.",
+        "button": "Erneut versuchen"
+      }
+    },
+    "languages": {
+      "de_DE": "Deutsch",
+      "en_EN": "Englisch"
+    },
+    "roles": {
+      "system": {
+        "superadmin": "Superadmin",
+        "user": "Gast"
+      }
+    },
+    "toast": {
+      "bad_request": "Es ist ein Fehler aufgetreten.",
+      "forbidden": "Zugriff verweigert.",
+      "cart": {
+        "add": {
+          "success": "Kurs erfolgreich hinzugefügt.",
+          "error": "Kurs konnte nicht zum Warenkorb hinzugefügt werden."
+        },
+        "delete_checkout": {
+          "success": "Buchung erfolgreich abgebrochen.",
+          "error": "Buchung konnte nicht abgebrochen werden.",
+          "error_payment_not_changeable": "Zahlung bereits in einem nicht stornierbaren Zustand"
+        },
+        "delete": {
+          "success": "Kurs erfolgreich entfernt.",
+          "error": "Kurs konnte nicht aus dem Warenkorb entfernt werden."
+        },
+        "create": {
+          "success": "Erfolgreich zur Kasse weitergeleitet.",
+          "error": "Weiterleitung zur Kasse fehlgeschlagen."
+        },
+        "update": {
+          "success": "Erfolgreich aktualisiert.",
+          "error": "Warenkorb konnte nicht aktualisiert werden."
+        },
+        "remove_product": {
+          "success": "Produkt erfolgreich entfernt.",
+          "error": "Produkt konnte nicht entfernt werden."
+        },
+        "coupon": {
+          "apply_success": "Coupon erfolgreich eingelöst.",
+          "apply_error": "Coupon konnte nicht eingelöst werden.",
+          "remove_success": "Coupon erfolgreich entfernt.",
+          "remove_error": "Coupon konnte nicht entfernt werden."
+        }
+      }
+    }
+  },
+  "cart": {
+    "cart": "Warenkorb",
+    "summary": "Zusammenfassung",
+    "remaining_time": "Reservierungszeit:",
+    "min": "Min.",
+    "total": "Gesamtsumme",
+    "continue_booking": "Buchung fortsetzen",
+    "go_to_checkout": "Zur Kasse gehen",
+    "note": "Hinweis",
+    "note_text_1": "Du hast bereits einen laufenden Buchungsvorgang. Möchtest du die Buchung fortsetzen oder abbrechen?",
+    "note_text_2": "Achtung: Beim Abbrechen verfallen deine reservierten Plätze.",
+    "add_more": "Weitere Kurse hinzufügen",
+    "cancel_booking": "Buchung abbrechen",
+    "no_courses": "Keine Kurse im Warenkorb",
+    "add": "Kurse hinzufügen",
+    "coupon": {
+      "placeholder": "Coupon code eingeben",
+      "apply": "Einlösen",
+      "remove": "Entfernen",
+      "applied": "Coupon eingelöst",
+      "discount": "Coupon",
+      "error_apply": "Ungültiger oder abgelaufener Couponcode.",
+      "error_remove": "Coupon konnte nicht entfernt werden."
+    },
+    "course_fee": "Die Grundgebühr wird einmal im Kurszeitraum bezahlt. Nach der einmaligen Zahlung für den laufenden Kurszeitraum können alle Kurse kostenlos gebucht werden. Sonderkurse sind als solche gekennzeichnet, kostenpflichtig und können nur belegt werden, wenn die Grundgebühr bereits bezahlt wurde."
+  },
+  "recurring": {
+    "month_singular": "Monat",
+    "month_plural": "Monate",
+    "monthly_payment": "{{price}}/Monat für {{duration}} {{monthText}}",
+    "monthly_prefix": "mtl.",
+    "one_time_with_duration": "{{price}} - {{duration}} {{monthText}}",
+    "duration_only": "Laufzeit {{duration}} {{monthText}}",
+    "subscription_minimum_duration": "Abo • {{duration}} {{monthText}} + mtl. Verlängerung",
+    "payment_info": "Annahme: Geld wird immer erst ab Start-Monat eingezogen"
+  }
+}

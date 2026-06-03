@@ -1,0 +1,44 @@
+{
+  "extName":        { "message": "ZHS Kurs-Übersicht" },
+  "extDescription": { "message": "Zeigt eine Verfügbarkeitsübersicht aller Kurse und Plätze der ZHS München auf einen Blick — mit direkter Buchungsmöglichkeit." },
+
+  "loadingText":   { "message": "Lade Verfügbarkeiten für alle Plätze…" },
+  "durToggleLabel":{ "message": "Buchungsdauer" },
+  "duration1h":    { "message": "1 Std." },
+  "duration2h":    { "message": "2 Std." },
+  "refreshTitle":  { "message": "Verfügbarkeiten neu laden" },
+  "collapseTitle": { "message": "Einklappen" },
+  "expandTitle":   { "message": "Ausklappen" },
+  "overviewSuffix":{ "message": "Übersicht" },
+  "defaultOfferName": { "message": "Kurs" },
+
+  "timeColHeader": { "message": "Uhrzeit" },
+
+  "legendAvailable": { "message": "Verfügbar" },
+  "legendFew":       { "message": "Wenige frei" },
+  "legendFull":      { "message": "Ausgebucht" },
+  "legendPast":      { "message": "Verstrichen" },
+  "legendSoon":      { "message": "Buchbar ab…" },
+  "legendBooked":    { "message": "Gebucht" },
+  "legendCart":      { "message": "Warenkorb" },
+
+  "bookableFromPrefix": { "message": "ab" },
+
+  "cellTooltip":      { "message": "$1 von $2 Plätzen verfügbar — klicken für Details" },
+  "cellSuffixBooked": { "message": " · $1 gebucht" },
+  "cellSuffixCart":   { "message": " · $1 im Warenkorb" },
+
+  "statusAvailable":      { "message": "Verfügbar" },
+  "statusBookedOut":      { "message": "Ausgebucht" },
+  "statusAlreadyBooked":  { "message": "Bereits gebucht" },
+  "statusInCart":         { "message": "Im Warenkorb" },
+  "statusNotYetBookable": { "message": "Noch nicht buchbar" },
+  "statusExpired":        { "message": "Abgelaufen" },
+
+  "closeTitle":     { "message": "Schließen" },
+  "bookBtn":        { "message": "Buchen" },
+  "bookBtnError":   { "message": "Fehler – nochmal" },
+  "popupStillAvail":{ "message": "noch $1/$2 verfügbar" },
+  "errorLoading":   { "message": "Fehler beim Laden: $1" },
+  "noSlots":        { "message": "Keine Zeitfenster im ausgewählten Zeitraum gefunden." }
+}

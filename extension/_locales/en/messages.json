@@ -1,0 +1,44 @@
+{
+  "extName":        { "message": "ZHS Course Overview" },
+  "extDescription": { "message": "Shows availability for all ZHS München courts and time slots at a glance — with direct booking support." },
+
+  "loadingText":   { "message": "Loading availability for all courts…" },
+  "durToggleLabel":{ "message": "Booking duration" },
+  "duration1h":    { "message": "1 hr." },
+  "duration2h":    { "message": "2 hr." },
+  "refreshTitle":  { "message": "Reload availability" },
+  "collapseTitle": { "message": "Collapse" },
+  "expandTitle":   { "message": "Expand" },
+  "overviewSuffix":{ "message": "Overview" },
+  "defaultOfferName": { "message": "Course" },
+
+  "timeColHeader": { "message": "Time" },
+
+  "legendAvailable": { "message": "Available" },
+  "legendFew":       { "message": "Few left" },
+  "legendFull":      { "message": "Fully booked" },
+  "legendPast":      { "message": "Past" },
+  "legendSoon":      { "message": "Bookable from…" },
+  "legendBooked":    { "message": "Booked" },
+  "legendCart":      { "message": "Cart" },
+
+  "bookableFromPrefix": { "message": "from" },
+
+  "cellTooltip":      { "message": "$1 of $2 courts available — click for details" },
+  "cellSuffixBooked": { "message": " · $1 booked" },
+  "cellSuffixCart":   { "message": " · $1 in cart" },
+
+  "statusAvailable":      { "message": "Available" },
+  "statusBookedOut":      { "message": "Fully booked" },
+  "statusAlreadyBooked":  { "message": "Already booked" },
+  "statusInCart":         { "message": "In cart" },
+  "statusNotYetBookable": { "message": "Not yet bookable" },
+  "statusExpired":        { "message": "Expired" },
+
+  "closeTitle":     { "message": "Close" },
+  "bookBtn":        { "message": "Book" },
+  "bookBtnError":   { "message": "Error – retry" },
+  "popupStillAvail":{ "message": "$1/$2 still available" },
+  "errorLoading":   { "message": "Error loading: $1" },
+  "noSlots":        { "message": "No time slots found for the selected period." }
+}

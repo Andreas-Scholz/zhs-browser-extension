@@ -1,0 +1,91 @@
+{
+  "yes": "yes",
+  "no": "no",
+  "languages": {
+    "de_DE": "German",
+    "en_EN": "English"
+  },
+  "roles": {
+    "system": {
+      "superadmin": "Superadmin",
+      "user": "Guest"
+    }
+  },
+  "weekdays": {
+    "long": {
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday",
+      "0": "Sunday"
+    },
+    "short": {
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat",
+      "0": "Sun"
+    }
+  },
+  "time": {
+    "clock": ""
+  },
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "confirm": "Confirm",
+    "contact": "Contact",
+    "continue": "Continue",
+    "remove": "Remove",
+    "next": "Next",
+    "back": "Back",
+    "add": "Add"
+  },
+  "states": {
+    "loading": "Loading...",
+    "empty": "No Entries"
+  },
+  "errors": {
+    "general_error": "An error occurred.",
+    "loading_error": "Data could not be loaded.",
+    "not_found": "No entries found.",
+    "empty_field": "Field cannot be empty",
+    "forbidden": "Not allowed.",
+    "error_view": {
+      "headline": "Oops, something went wrong!",
+      "description": "Don't panic, our technical team is already working on fixing the problem. Just try again later.",
+      "button": "Try again"
+    }
+  },
+  "infos": {
+    "unknown": "Unknown",
+    "of": " of ",
+    "result": "1 Result",
+    "results": "{{count}} Results",
+    "leave_to_another_page": {
+      "headline": "Note on forwarding!",
+      "description_before": "For data protection reasons, we would like to point out that you will be redirected to the external ",
+      "description_after": " page. Would you like to continue?"
+    }
+  },
+  "file_picker": {
+    "actions": {
+      "select_file": "Select file",
+      "is_loading": "Loading...",
+      "try_again": "Try again"
+    },
+    "errors": {
+      "file_too_large": "File is too large.",
+      "file_type_not_allowed": "File type is not allowed.",
+      "could_not_transform_file": "Error uploading file."
+    }
+  },
+  "characters": "characters",
+  "character_limit_reached": "Character limit reached"
+}

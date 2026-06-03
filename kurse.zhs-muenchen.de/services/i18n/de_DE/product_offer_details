@@ -1,0 +1,135 @@
+{
+  "common": {
+    "time": {
+      "time_suffix": "Uhr"
+    },
+    "weekdays": {
+      "long": {
+        "1": "Montag",
+        "2": "Dienstag",
+        "3": "Mittwoch",
+        "4": "Donnerstag",
+        "5": "Freitag",
+        "6": "Samstag",
+        "0": "Sonntag"
+      },
+      "short": {
+        "1": "Mo",
+        "2": "Di",
+        "3": "Mi",
+        "4": "Do",
+        "5": "Fr",
+        "6": "Sa",
+        "0": "So"
+      }
+    },
+    "actions": {
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "confirm": "Bestätigen",
+      "contact": "Kontaktieren",
+      "continue": "Fortfahren",
+      "add_to_cart": "In den Warenkorb",
+      "checkout": "Zur Kasse",
+      "more_bookings": "Weitere Buchungen vornehmen",
+      "login": "Login",
+      "reload": "Erneut versuchen",
+      "understood": "Verstanden"
+    },
+    "states": {
+      "loading": "Lädt...",
+      "empty": "Keine Einträge"
+    },
+    "infos": {
+      "unknown": "Unbekannt",
+      "of": " von ",
+      "result": "1 Ergebnis",
+      "results": "{{count}} Ergebnisse",
+      "leave_to_another_page": {
+        "headline": "Hinweis zur Weiterleitung!",
+        "description_before": "Aus Datenschutzgründen möchten wir dich darauf hinweisen, dass du auf die externe Seite ",
+        "description_after": " weitergeleitet wirst. Möchtest du fortfahren?"
+      }
+    },
+    "errors": {
+      "general_error": "Es ist ein Fehler aufgetreten.",
+      "loading_error": "Daten konnten nicht geladen werden.",
+      "not_found": "Keine Einträge gefunden.",
+      "empty_field": "Feld darf nicht leer sein",
+      "error_view": {
+        "headline": "Ups, da ging etwas schief!",
+        "description": "Keine Panik, unser technisches Team arbeitet bereits an der Behebung des Problems. Versuch es einfach später noch einmal."
+      }
+    },
+    "languages": {
+      "de_DE": "Deutsch",
+      "en_EN": "Englisch"
+    },
+    "roles": {
+      "system": {
+        "superadmin": "Superadmin",
+        "user": "Gäste"
+      }
+    },
+    "toast": {
+      "bad_request": "Es ist ein Fehler aufgetreten.",
+      "forbidden": "Zugriff verweigert.",
+      "booking_in_progress": "Schließe deine laufende Buchung ab, bevor du neue Artikel hinzufügst.",
+      "cart": {
+        "add": {
+          "success": "Produkt erfolgreich zum Warenkorb hinzugefügt.",
+          "authorization_error": "Du hast die Voraussetzungen nicht erfüllt.",
+          "error": "Produkt konnte nicht zum Warenkorb hinzugefügt werden.",
+          "error_dependency_unavailable": "Kurs konnte nicht hinzugefügt werden, da die erforderliche Voraussetzung \"{{dependencyName}}\" ausverkauft ist."
+        }
+      }
+    }
+  },
+  "product_offer_details": {
+    "prerequisites": "Buchungsvoraussetzungen",
+    "target_roles": "Preis für {{ role }}: {{ price }} / Zeitslot",
+    "empty_products": "Es wurden noch keine Produkte in diesem Angebot veröffentlicht. Schau gern später noch einmal vorbei.",
+    "empty_slots": "Es gibt derzeit keine buchbaren Slots.",
+    "login": {
+      "headline": "Melde dich an!",
+      "description": "Du bist noch nicht angemeldet. Bitte logge dich ein, um Slots buchen zu können."
+    },
+    "slot_status": {
+      "not_yet_bookable": "Buchungszeitraum ab {{ date }}",
+      "expired": "Buchungszeitraum abgelaufen",
+      "no_permission": "Keine Berechtigung, nur buchbar für {{ roles }}",
+      "already_in_cart": "Bereits im Warenkorb",
+      "already_booked": "Bereits gebucht",
+      "join_waiting_list": "Warteliste beitreten",
+      "leave_waiting_list": "Warteliste verlassen",
+      "booked_out": "Ausgebucht",
+      "available": "Verfügbar"
+    },
+    "modal": {
+      "add_to_cart": {
+        "headline": "Meine Auswahl",
+        "subheadline": "Du hast folgende Auswahl getroffen:"
+      },
+      "reservation": {
+        "timer.prefix": "Reservierungszeit",
+        "timer.suffix": "Min.",
+        "reservation": {
+          "headline": "Reservierung",
+          "subheadline": "Reservierungszeit kurz erklärt",
+          "description": "<li>Deine Produkte werden für die nächsten Minuten reserviert.</li><li>Du kannst in dieser Zeit weitere Produkte in den Warenkorb legen und deine Buchung abschließen.</li>"
+        },
+        "fee": {
+          "headline": "Grundgebühr & Reservierung",
+          "subheadline": "Grundgebühr kurz erklärt",
+          "description": "<li>Die Grundgebühr wird einmalig erhoben und ist Voraussetzung für deine Buchung.</li><li>Sie deckt grundlegende Kosten ab.</li>"
+        }
+      },
+      "prerequisite": {
+        "headline": "Buchungsvoraussetzungen",
+        "subheadline": "Voraussetzungen für die Buchung:"
+      }
+    }
+  }
+}

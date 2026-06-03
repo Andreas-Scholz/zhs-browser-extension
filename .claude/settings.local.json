@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\workspace\\\\zhs-plugin\\\\extension\\\\_locales\\\\de\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\workspace\\\\zhs-plugin\\\\extension\\\\_locales\\\\en\")",
+      "Bash(Write-Output \"done\")",
+      "PowerShell(New-Item *)",
+      "PowerShell(Copy-Item *)",
+      "PowerShell(python -c \"import cairosvg; print\\('cairosvg ok'\\)\" 2>&1)",
+      "PowerShell(python -c \"import PIL; print\\('pillow ok'\\)\" 2>&1)",
+      "PowerShell(python -c \"import wand; print\\('wand ok'\\)\" 2>&1)",
+      "WebSearch"
+    ]
+  }
+}
