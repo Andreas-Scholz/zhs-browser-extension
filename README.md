@@ -14,8 +14,8 @@ A browser extension for [kurse.zhs-muenchen.de](https://kurse.zhs-muenchen.de) t
 
 | Browser | Store |
 |---------|-------|
-| Firefox 109+ | [Firefox Add-ons (AMO)](https://addons.mozilla.org) |
-| Firefox for Android 113+ | Firefox Add-ons (AMO) |
+| Firefox 140+ | [Firefox Add-ons (AMO)](https://addons.mozilla.org) |
+| Firefox for Android 142+ | Firefox Add-ons (AMO) |
 | Chrome / Chromium 88+ | [Chrome Web Store](https://chrome.google.com/webstore) |
 
 ## Project structure
@@ -43,15 +43,12 @@ Load unpacked in Chrome:
 1. Go to `chrome://extensions` → enable Developer mode
 2. Click "Load unpacked" → select the `extension/` folder
 
-## Publishing
-
-See [STORE_SUBMISSION.md](STORE_SUBMISSION.md) for step-by-step submission guides for both Firefox AMO and Chrome Web Store, including all asset requirements and checklist items.
-
 ## Adding a new language
 
 1. Create `extension/_locales/{lang}/messages.json` — copy `de/messages.json` as a template.
 2. Translate all 34 string keys.
-3. The extension automatically uses the new locale when the website URL contains that language segment (e.g. `/fr/`).
+3. Add `"_locales/{lang}/messages.json"` to the `web_accessible_resources[0].resources` array in `manifest.json`.
+4. The extension automatically uses the new locale when the website URL contains that language segment (e.g. `/fr/`).
 
 ## Privacy
 

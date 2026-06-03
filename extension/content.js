@@ -187,32 +187,65 @@ mutation Add_slot_product_to_cart($input: AddSlotProductToCartInput!) {
   function createPanel(offerName) {
     const panel = document.createElement('div');
     panel.id = 'zhs-overview-panel';
-    // Static structure only — no user data interpolated into innerHTML.
-    // Translation strings from t() are controlled values, safe for innerHTML.
-    panel.innerHTML = `
-      <div class="zhs-header">
-        <div class="zhs-header-title">
-          <span class="zhs-offer-name"></span>
-        </div>
-        <div class="zhs-header-actions">
-          <div class="zhs-dur-toggle" role="group" aria-label="${t('durToggleLabel')}">
-            <button class="zhs-dur-btn" data-dur="1">${t('duration1h')}</button>
-            <button class="zhs-dur-btn zhs-dur-active" data-dur="2">${t('duration2h')}</button>
-          </div>
-          <button class="zhs-btn-icon" id="zhs-refresh-btn" title="${t('refreshTitle')}">↻</button>
-          <button class="zhs-btn-icon" id="zhs-collapse-btn" title="${t('collapseTitle')}">▼</button>
-        </div>
-      </div>
-      <div class="zhs-body" id="zhs-body">
-        <div class="zhs-loading" id="zhs-loading">
-          <div class="zhs-spinner"></div>
-          <span>${t('loadingText')}</span>
-        </div>
-        <div id="zhs-content"></div>
-      </div>
-    `;
-    // Set user-controlled string safely via textContent.
-    panel.querySelector('.zhs-offer-name').textContent = `${offerName} — ${t('overviewSuffix')}`;
+    const headerTitle = document.createElement('div');
+    headerTitle.className = 'zhs-header-title';
+    const offerSpan = document.createElement('span');
+    offerSpan.className = 'zhs-offer-name';
+    offerSpan.textContent = `${offerName} — ${t('overviewSuffix')}`;
+    headerTitle.appendChild(offerSpan);
+
+    const durToggle = document.createElement('div');
+    durToggle.className = 'zhs-dur-toggle';
+    durToggle.setAttribute('role', 'group');
+    durToggle.setAttribute('aria-label', t('durToggleLabel'));
+    const durBtn1 = document.createElement('button');
+    durBtn1.className = 'zhs-dur-btn';
+    durBtn1.dataset.dur = '1';
+    durBtn1.textContent = t('duration1h');
+    const durBtn2 = document.createElement('button');
+    durBtn2.className = 'zhs-dur-btn zhs-dur-active';
+    durBtn2.dataset.dur = '2';
+    durBtn2.textContent = t('duration2h');
+    durToggle.append(durBtn1, durBtn2);
+
+    const refreshBtnEl = document.createElement('button');
+    refreshBtnEl.className = 'zhs-btn-icon';
+    refreshBtnEl.id = 'zhs-refresh-btn';
+    refreshBtnEl.title = t('refreshTitle');
+    refreshBtnEl.textContent = '↻';
+
+    const collapseBtnEl = document.createElement('button');
+    collapseBtnEl.className = 'zhs-btn-icon';
+    collapseBtnEl.id = 'zhs-collapse-btn';
+    collapseBtnEl.title = t('collapseTitle');
+    collapseBtnEl.textContent = '▼';
+
+    const headerActions = document.createElement('div');
+    headerActions.className = 'zhs-header-actions';
+    headerActions.append(durToggle, refreshBtnEl, collapseBtnEl);
+
+    const header = document.createElement('div');
+    header.className = 'zhs-header';
+    header.append(headerTitle, headerActions);
+
+    const spinner = document.createElement('div');
+    spinner.className = 'zhs-spinner';
+    const loadingSpan = document.createElement('span');
+    loadingSpan.textContent = t('loadingText');
+    const loadingDiv = document.createElement('div');
+    loadingDiv.className = 'zhs-loading';
+    loadingDiv.id = 'zhs-loading';
+    loadingDiv.append(spinner, loadingSpan);
+
+    const contentDiv = document.createElement('div');
+    contentDiv.id = 'zhs-content';
+
+    const bodyDiv = document.createElement('div');
+    bodyDiv.className = 'zhs-body';
+    bodyDiv.id = 'zhs-body';
+    bodyDiv.append(loadingDiv, contentDiv);
+
+    panel.append(header, bodyDiv);
 
     panel.querySelector('#zhs-collapse-btn').addEventListener('click', () => {
       const body = panel.querySelector('#zhs-body');
@@ -237,15 +270,22 @@ mutation Add_slot_product_to_cart($input: AddSlotProductToCartInput!) {
 
     const legend = document.createElement('div');
     legend.className = 'zhs-legend';
-    legend.innerHTML = `
-      <span class="zhs-dot zhs-avail"></span>${t('legendAvailable')} &ensp;
-      <span class="zhs-dot zhs-few"></span>${t('legendFew')} &ensp;
-      <span class="zhs-dot zhs-full"></span>${t('legendFull')} &ensp;
-      <span class="zhs-dot zhs-past"></span>${t('legendPast')} &ensp;
-      <span class="zhs-dot zhs-soon"></span>${t('legendSoon')} &ensp;
-      <span class="zhs-swatch zhs-swatch-booked"></span>${t('legendBooked')} &ensp;
-      <span class="zhs-swatch zhs-swatch-cart"></span>${t('legendCart')}
-    `;
+    const legendItems = [
+      ['zhs-dot zhs-avail',            'legendAvailable'],
+      ['zhs-dot zhs-few',              'legendFew'],
+      ['zhs-dot zhs-full',             'legendFull'],
+      ['zhs-dot zhs-past',             'legendPast'],
+      ['zhs-dot zhs-soon',             'legendSoon'],
+      ['zhs-swatch zhs-swatch-booked', 'legendBooked'],
+      ['zhs-swatch zhs-swatch-cart',   'legendCart'],
+    ];
+    for (let i = 0; i < legendItems.length; i++) {
+      const [cls, key] = legendItems[i];
+      const dot = document.createElement('span');
+      dot.className = cls;
+      legend.appendChild(dot);
+      legend.appendChild(document.createTextNode(t(key) + (i < legendItems.length - 1 ? '  ' : '')));
+    }
     wrapper.appendChild(legend);
 
     const scroller = document.createElement('div');
@@ -267,10 +307,13 @@ mutation Add_slot_product_to_cart($input: AddSlotProductToCartInput!) {
       const th = document.createElement('th');
       const d = new Date(day + 'T12:00:00');
       th.className = 'zhs-col-day' + (day === today ? ' zhs-today' : '');
-      // toLocaleDateString is browser-generated, safe for innerHTML.
-      th.innerHTML =
-        `<div class="zhs-wd">${d.toLocaleDateString(UI_LOCALE, { weekday: 'short' })}</div>` +
-        `<div class="zhs-dm">${d.toLocaleDateString(UI_LOCALE, { day: 'numeric', month: 'short' })}</div>`;
+      const wdDiv = document.createElement('div');
+      wdDiv.className = 'zhs-wd';
+      wdDiv.textContent = d.toLocaleDateString(UI_LOCALE, { weekday: 'short' });
+      const dmDiv = document.createElement('div');
+      dmDiv.className = 'zhs-dm';
+      dmDiv.textContent = d.toLocaleDateString(UI_LOCALE, { day: 'numeric', month: 'short' });
+      th.append(wdDiv, dmDiv);
       headerRow.appendChild(th);
     }
 
@@ -368,16 +411,21 @@ mutation Add_slot_product_to_cart($input: AddSlotProductToCartInput!) {
     const popup = document.createElement('div');
     popup.className = 'zhs-popup';
 
-    // Header — both dayTitle and timeLabel are locale-generated strings, safe.
     const head = document.createElement('div');
     head.className = 'zhs-popup-head';
-    head.innerHTML = `
-      <div>
-        <div class="zhs-popup-day">${dayTitle}</div>
-        <div class="zhs-popup-time">${timeLabel}</div>
-      </div>
-      <button class="zhs-popup-close" title="${t('closeTitle')}">✕</button>
-    `;
+    const popupDayEl = document.createElement('div');
+    popupDayEl.className = 'zhs-popup-day';
+    popupDayEl.textContent = dayTitle;
+    const popupTimeEl = document.createElement('div');
+    popupTimeEl.className = 'zhs-popup-time';
+    popupTimeEl.textContent = timeLabel;
+    const popupInfo = document.createElement('div');
+    popupInfo.append(popupDayEl, popupTimeEl);
+    const popupCloseBtn = document.createElement('button');
+    popupCloseBtn.className = 'zhs-popup-close';
+    popupCloseBtn.title = t('closeTitle');
+    popupCloseBtn.textContent = '✕';
+    head.append(popupInfo, popupCloseBtn);
     popup.appendChild(head);
 
     const courtsList = document.createElement('div');
