@@ -1,6 +1,6 @@
 {
-  "extName":        { "message": "ZHS Kurs-Übersicht" },
-  "extDescription": { "message": "Zeigt eine Verfügbarkeitsübersicht aller Kurse und Plätze der ZHS München auf einen Blick — mit direkter Buchungsmöglichkeit." },
+  "extName":        { "message": "ZHS Buchungs-Übersicht" },
+  "extDescription": { "message": "Zeigt eine Verfügbarkeitsübersicht aller Plätze der ZHS München auf einen Blick — mit direkter Buchungsmöglichkeit." },
 
   "loadingText":   { "message": "Lade Verfügbarkeiten für alle Plätze…" },
   "durToggleLabel":{ "message": "Buchungsdauer" },

@@ -1,5 +1,5 @@
 {
-  "extName":        { "message": "ZHS Course Overview" },
+  "extName":        { "message": "ZHS Booking Overview" },
   "extDescription": { "message": "Shows availability for all ZHS München courts and time slots at a glance — with direct booking support." },
 
   "loadingText":   { "message": "Loading availability for all courts…" },
